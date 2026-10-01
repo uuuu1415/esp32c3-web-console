@@ -84,8 +84,12 @@ body{
   background:var(--card);border:1px solid var(--line);overflow:hidden;text-decoration:none;
   color:var(--text);transition:background .15s ease,transform .15s ease}
 .contact:hover{background:var(--card-hover);transform:translateY(-2px)}
+/* 用图片当图标时，图片本身就是图标，不再套圆圈边框 */
+.contact.hasimg{background:transparent;border-color:transparent}
+.contact.hasimg:hover{background:transparent;opacity:.85}
 .contact.pending{opacity:.38;cursor:default}
 .contact.pending:hover{transform:none;background:var(--card)}
+.contact.pending.hasimg:hover{background:transparent}
 .contact img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* ---------------- 右栏 ---------------- */
