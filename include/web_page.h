@@ -324,6 +324,7 @@ body{
       if (c.img) {
         loadImage(c.img, function (img) {
           img.alt = c.name || "";
+          node.classList.add("hasimg");     // 图片图标不再套边框
           node.appendChild(img);
         }, function () { node.textContent = contactFallback(c); });
       } else {
