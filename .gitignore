@@ -1,0 +1,22 @@
+# ---- 本地配置：包含 WiFi 密码与各种 Token，绝对不要提交 ----
+include/wifi_config.h
+
+# ---- PlatformIO 构建产物 ----
+.pio/
+.pioenvs/
+.piolibdeps/
+*.bin
+*.elf
+*.map
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- 本地备份与草稿 ----
+backup/
+*.bak
+*.orig

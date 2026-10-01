@@ -1,0 +1,3 @@
+# 统一换行符，避免 Windows/Linux 协作时的整文件 diff
+* text=auto eol=lf
+*.png binary
